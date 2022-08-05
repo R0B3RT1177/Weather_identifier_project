@@ -19,10 +19,10 @@ Imagenet takes and input then it classifies the image and gets the confidence it
  3. Use the file_mover.py in the reposotory to sort all of the data.
 
 **Re-training**
- 1. go into the docker container from the jetson-inference folder.
- 2. cd into python/training/classification
- 3. run: python3 train.py --model-dir=models/<dataset name> data/<dataset name>
- 4. if you pause and want to restart the training, from the docker container cd back to
+ 1. Go into the docker container from the jetson-inference folder.
+ 2. Cd into python/training/classification
+ 3. Run: python3 train.py --model-dir=models/<dataset name> data/<dataset name>
+ 4. If you pause and want to restart the training, from the docker container cd back to
  python/training/classification then you would want to run:
  python3 train.py --resume models/<dataset name>/checkpoint.pth.tar --start-epoch <epoch    number you left off at> --model-dir=models/<dataset name> data/<dataset name>
 
