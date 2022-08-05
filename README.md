@@ -6,7 +6,10 @@
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+I used imagenet for my project.
+
+Imagenet takes and input then it classifies the image and gets the confidence it has in that classification, then it overlays the classification and confidence on the image. For videos it just does this on loop until the video stops.
+
 
 ## Running this project
 
