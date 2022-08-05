@@ -2,7 +2,7 @@
 
  Will identify weather from dew, fogsmog, frost, glaze, hail, lightning, rain, rainbow, rime,  sandstorm, and snow.
 
-![add image descrition here](direct image link here)
+![An image of a frozen tree caused by rime, the top left corner has a correct identification of rime with a confidence of %89.34](![image](https://user-images.githubusercontent.com/107824315/183145437-c0a46c7b-4063-4924-8367-bb14bdd4ddc3.png))
 
 ## The Algorithm
 
@@ -21,7 +21,7 @@ Imagenet takes and input then it classifies the image and gets the confidence it
 **Re-training**
  1. Go into the docker container from the jetson-inference folder.
  2. Cd into python/training/classification
- 3. Run: python3 train.py --model-dir=models/<dataset name> data/<dataset name>
+ 3. Run: python3 train.py --model-dir=models/_dataset name_ data/_dataset name_
  4. If you pause and want to restart the training, from the docker container cd back to
  python/training/classification then you would want to run:
  python3 train.py --resume models/<dataset name>/checkpoint.pth.tar --start-epoch <epoch    number you left off at> --model-dir=models/<dataset name> data/<dataset name>
