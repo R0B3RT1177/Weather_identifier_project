@@ -2,7 +2,7 @@
 
  Will identify weather from dew, fogsmog, frost, glaze, hail, lightning, rain, rainbow, rime,  sandstorm, and snow.
 
-![An image of rime, with a identification of rime with a confidence of %89.34]([Imgur](https://i.imgur.com/btQWu3l.jpg))
+![An image of rime, with a identification of rime with a confidence of %89.34](https://i.imgur.com/btQWu3l.jpg)
 
 ## The Algorithm
 
