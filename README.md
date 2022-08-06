@@ -21,27 +21,24 @@ Imagenet takes an input, then it classifies the image and gets the confidence it
 **Re-training**
  1. Go into the docker container from the jetson-inference folder.
  2. Cd into python/training/classification
- 3. Run: python3 train.py --model-dir=models/_dataset name_ data/_dataset name_
+ 3. Run: python3 train.py --model-dir=models/**_dataset name**_ data/**_dataset name**_
  4. If you pause and want to restart the training, from the docker container cd back to
  python/training/classification then you would want to run:
- python3 train.py --resume models/<dataset name>/checkpoint.pth.tar --start-epoch <epoch    number you left off at> --model-dir=models/<dataset name> data/<dataset name>
+ python3 train.py --resume models/**_dataset name**_/checkpoint.pth.tar --start-epoch **_epoch number you left off at**_ --model-dir=models/**_dataset name**_ data/_**dataset name**_
 
 **Using**
  1. In the docker container, cd to python/training/classification again
  2. From there, convert the re-trained network to a ONNX format by running python3
 onnx_export.py --model-dir=models/cat_dog
  3. Exit the docker container by pressing ctrl + d or just typing exit
- 4. Set NET and DATASET variables by running NET=models/<dataset name> first, then running
-DATASET=data/<dataset name>
+ 4. Set NET and DATASET variables by running NET=models/**_dataset name**_ first, then running
+DATASET=data/**_dataset name**_
  5. You can get an image using wget, but you should use one that's in your testing folder
 for this next part
  6. run imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0
---labels=$DATASET/labels.txt $DATASET/test/<path to a classification img> <output img
-name.jpg>
+--labels=$DATASET/labels.txt $DATASET/test/**_path to a classification img**_ **_output img
+name.jpg**_
  7. Secure copy the output img to your desktop to check it
-
  
-
-5. Make sure to include any required libraries that need to be installed for your project to run.
 
 [View a video explanation here](video link)
