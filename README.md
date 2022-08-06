@@ -8,7 +8,7 @@
 
 I used imagenet for my project.
 
-Imagenet takes and input then it classifies the image and gets the confidence it has in that classification, then it overlays the classification and confidence on the image, then it outputs that image. For videos it just does this on loop until the video stops.
+Imagenet takes an input, then it classifies the image and gets the confidence it has in that classification, then it overlays the classification and confidence on the image, then it outputs that image. For videos it just does this on loop until the video stops.
 
 
 ## Running this project
