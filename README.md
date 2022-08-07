@@ -41,4 +41,4 @@ for this next part
  7. Secure copy the output img to your desktop to check it
  
 
-[View a video explanation here](video link)
+[View a video explanation here](https://youtu.be/w9LQBdlKy9s)
