@@ -36,7 +36,7 @@ DATASET=data/**dataset name**
  5. You can get an image using wget, but you should use one that's in your testing folder
 for this next part
  6. run imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0
---labels=$DATASET/labels.txt $DATASET/test/**path to a classification img**
+--labels=$DATASET/labels.txt $DATASET/test/**path to a classification img.jpg**
  **output img name.jpg**
  7. Secure copy the output img to your desktop to check it
  
