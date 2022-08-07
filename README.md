@@ -16,7 +16,7 @@ Imagenet takes an input, then it classifies the image and gets the confidence it
 **Data**
  1. Get the dataset [here](https://www.kaggle.com/datasets/jehanbhathena/weather-dataset/discussion)
  2. Secure copy the dataset to the jetson nano into /home/nvidia/jetson-inference/python/training/classification/data
- 3. Use the file_mover.py in the reposotory to sort all of the data.
+ 3. Use the file_mover.py in this reposotory to sort all of the data.
 
 **Re-training**
  1. Go into the docker container from the jetson-inference folder.
